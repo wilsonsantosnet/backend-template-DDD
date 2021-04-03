@@ -49,7 +49,7 @@ namespace <#namespace#>.Api
                 options.JsonSerializerOptions.WriteIndented = false;
                 options.JsonSerializerOptions.AllowTrailingCommas = true;
                 options.JsonSerializerOptions.Converters.Add(new StringJsonConverter());
-		options.JsonSerializerOptions.Converters.Add(new DatimeJsonConverter());
+				options.JsonSerializerOptions.Converters.Add(new DatimeJsonConverter());
             });
 
             services.AddDbContext<DbContext<#contextName#>>(
